@@ -15,7 +15,6 @@
     <!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
     <!--    </properties>-->
 
-
     <groupId>com.juaracoding</groupId>
     <artifactId>mafjavaweb</artifactId>
     <version>1.0-SNAPSHOT</version>
