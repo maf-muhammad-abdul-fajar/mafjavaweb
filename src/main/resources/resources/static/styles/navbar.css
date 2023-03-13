@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: aliceblue;
+  /* border: 1px solid gray; */
+}
+
+.navbar > .wrapper {
+  display: flex;
+  /* border: solid tomato 1px; */
+  /* width: inherit; */
+  width: 1900px;
+  justify-content: space-around; 
+  align-items: center; 
+  padding: 20px 0;
+}
+
+
+
+
+.menu ul {
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+  /* padding-left: 2px; */
+
+}
+
+.menu ul li a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: aliceblue;
+  color: #000;
+}
+

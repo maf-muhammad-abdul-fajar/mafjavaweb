@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link th:href="@{/styles/style.css}" rel="stylesheet" />
+  <link th:href="@{/styles/navbar.css}" rel="stylesheet" />
+  <link th:href="@{/styles/banner.css}" rel="stylesheet" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="wrapper">
+      <div class="logo">
+        <img src="https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/gnb-desktop-120x32.png" alt="">
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Korporasi</a>
+          </li>
+          <li>
+            <a href="#">Karir & Rekrutmen</a>
+          </li>
+          <li>
+            <a href="#">Kontak</a>
+          </li>
+          <li>
+            <a th:href = "@{/api/check/signin}">Sign In</a>
+          </li>
+          <li>
+            <a th:disabled="${verifyEmail == ''}" th:href = "@{/api/check/signin}">Logout</a>
+          </li>
+          <li>
+            <a href="./register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="text-promo">
+      Manjakan mata dengan warna-warna yang cerah
+    </div>
+    <div class="text-desc">
+      Manjakan mata Anda dengan layar Infinity-V berukuran 6,6 inci milik Samsung Galaxy A14 5G. Nikmati konten-konten kesukaan Anda dalam resolusi tinggi serta warna yang akurat dengan teknologi layar FHD+.
+    </div>
+  </div>
+  <div class="fitur">
+    
+    <h2>4 Fitur Unggulan</h2>
+    <div class="wrapper">
+      <div class="card">
+        <img src="https://images.samsung.com/is/content/samsung/p6pim/id/feature/164340622/id-feature-6-6-quot--full-hd--display-534794689.svg?$56_56_JPG$" />
+        <h4>Layar 6,6 inci Full HD+</h4>
+      </div>
+      <div class="card">
+        <img src="https://images.samsung.com/is/content/samsung/p6pim/id/feature/164340621/id-feature-50mp-main-camera-534794687.svg?$56_56_JPG$" />
+        <h4>Main Camera 50MP</h4>
+      </div>
+      <div class="card">
+        <img src="https://images.samsung.com/is/content/samsung/p6pim/id/feature/164340623/id-feature-octa-core-x-5g-534794690.svg?$56_56_JPG$" />
+        <h4>Octa-core x 5G Terbaik</h4>
+      </div>
+      <div class="card">
+        <img src="https://images.samsung.com/is/content/samsung/p6pim/id/feature/164340625/id-feature-2-day-battery-534794688.svg?$56_56_JPG$" />
+        <h4>Baterai sampai 2 hari</h4>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
