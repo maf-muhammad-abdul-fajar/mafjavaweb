@@ -10,7 +10,6 @@ Created on 3/8/2023 7:54 PM
 Version 1.0
 */
 
-
 import com.juaracoding.mafjavaweb.dto.CategoryArticleDTO;
 import com.juaracoding.mafjavaweb.handler.ResourceNotFoundException;
 import com.juaracoding.mafjavaweb.handler.ResponseHandler;
